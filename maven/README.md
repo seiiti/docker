@@ -27,15 +27,22 @@ docker run --detach --name=[container] seiiti/maven
 
 ### 2. (Optional) Copy Maven's settings.xml
 
-Copy `settings.xml` file from host, usually containing your repositories'
-credentials, if necessary.
+Copy to container your local `settings.xml` file, usually containing your 
+repositories' credentials, if necessary.
 
 ```sh
-docker cp ~/.m2/settings.xml /root/.m2/
+docker cp ~/.m2/settings.xml [container]:/root/.m2/
 ```
 
 ### 3. Start Bash
 
 ```sh
 docker exec --interactive --tty [container] /bin/bash
+```
+
+### 4. (Optional) Create mvnrepo.tar.gz
+
+```sh
+docker exec [container] /root/mvnrepo-create
+docker cp [container]:/root/mvnrepo.tar.gz [host-path]
 ```

@@ -24,6 +24,7 @@ ENV LC_CTYPE en_US.UTF-8
 # 3. Copy Maven Repository
 
 ADD mvnrepo.tar.gz /root
+COPY mvnrepo-create /root/
 
 
 # 4. Delete apt list files

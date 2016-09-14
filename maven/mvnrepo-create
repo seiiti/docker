@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /root
+
+tar -czf mvnrepo.tar.gz \
+  --exclude=".m2/settings.xml" \
+  --exclude=".m2/repository/br/com/techne/cronos-*" \
+  --exclude=".m2/repository/br/com/techne/ng" \
+  .m2
