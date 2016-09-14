@@ -3,8 +3,8 @@ jdk-oracle
 
 Oracle JDK 8 in `debian:8.5`.
 
-## Build
+## Download
 
 ```sh
-docker build --tag [image_name] [/path/to/Dockerfile]
+docker pull seiiti/jdk-oracle
 ```

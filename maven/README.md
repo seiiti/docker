@@ -8,3 +8,9 @@ Base image for Java build environment.
 - Git
 - Subversion
 - Maven
+
+## Download
+
+```sh
+docker pull seiiti/jdk-oracle
+```
