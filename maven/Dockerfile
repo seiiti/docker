@@ -21,7 +21,12 @@ RUN set -x \
 ENV LC_CTYPE en_US.UTF-8
 
 
-# 3. Delete apt list files
+# 3. Copy Maven Repository
+
+ADD mvnrepo.tar.gz /root
+
+
+# 4. Delete apt list files
 
 RUN set -x \
     && rm -rf /var/lib/apt/lists/*
