@@ -1,0 +1,4 @@
+# http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
+
+deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
+deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
